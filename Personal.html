@@ -198,9 +198,16 @@
 
 
           <h1>
-  Welcome, 
-              <asp:Label ID="LB_Welcome" runat="server" Text="Robert Miller" Font-Bold ="true" ></asp:Label>
-              <b></b>
+  <p>Welcome, <label for="vehicle" id="lblVehicle"></label><br /></p>
+             
+        <script>
+          
+   
+    var myParam = (location.search.split('firstname=%27')[1]||'').split('%27')[0]
+
+document.getElementById('lblVehicle').innerHTML = myParam;
+</script>
+ <b></b>
 </h1>
 
 

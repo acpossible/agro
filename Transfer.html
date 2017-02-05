@@ -397,11 +397,9 @@
 
 <div id="myProgress">
   <div id="myBar">
-    <div id="label">0%</div>
+    <div id="lbl">0%</div>
   </div>
 </div>
-
-<br>
 
 <script>
 function move() {
@@ -414,7 +412,7 @@ function move() {
     } else {
       width++; 
       elem.style.width = width + '%'; 
-      document.getElementById("label").innerHTML = width * 1  + '%';
+      document.getElementById("lbl").innerHTML = width * 1  + '%';
     }
   }
 }

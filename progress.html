@@ -47,20 +47,21 @@
 
 
 <script>
-
+function move() {
   var elem = document.getElementById("myBar");   
   var width = 2;
   var id = setInterval(frame, 250);
-  
+  function frame() {
     if (width >= 70) {
      window.location.href="Confirmation.html";
     } else {
       width++; 
       elem.style.width = width + '%'; 
       document.getElementById("lbl").innerHTML = width * 1  + '%';
-    
+    }
   }
-
+}
+  move();
 </script>
  
 </body>

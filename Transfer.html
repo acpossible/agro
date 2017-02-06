@@ -34,27 +34,7 @@
 
 <link rel="stylesheet" type="text/css" href='default_001.css' media="all">
 </head>
-   <style>
-#myProgress {
-  position: relative;
-  width: 100%;
-  height: 30px;
-  background-color: #ddd;
-}
-
-#myBar {
-  position: absolute;
-  width: 10%;
-  height: 100%;
-  background-color:  #2874A6;
-}
-
-#label {
-  text-align: center;
-  line-height: 30px;
-  color: white;
-}
-</style>
+   
 <body id="top">
     <form id="form1" >
 <div class="aspNetHidden">
@@ -389,7 +369,7 @@
                                 <td></td>
                                 <td>&nbsp;<br />
                                     <br />
-                                   <button onclick="move()" id="Tras_bt" style="background:#000099; BorderStyle:None; color:White; width: 89px;  height: 35px " Type="Submit" >Confirm</button> 
+                                   <button onclick="window.location.href='progress.html'" id="Tras_bt" style="background:#000099; BorderStyle:None; color:White; width: 89px;  height: 35px " Type="Submit" >Confirm</button> 
                                </td>
                             </tr>
                         </table>
@@ -397,28 +377,7 @@
 
 
 
-<div id="myProgress">
-  <div id="myBar">
-    <div id="lbl">0%</div>
-  </div>
-</div>
 
-<script>
-function move() {
-  var elem = document.getElementById("myBar");   
-  var width = 2;
-  var id = setInterval(frame, 250);
-  function frame() {
-    if (width >= 70) {
-      alert("Hello\nHow are you?");
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-      document.getElementById("lbl").innerHTML = width * 1  + '%';
-    }
-  }
-}
-</script>
 
     <!--DEV initial map parameters are set in data options. This should be a valid JSON object. Center should match backedn search. Zoom should default to 6, but if backend search should be set to 10-->
 
